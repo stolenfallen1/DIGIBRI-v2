@@ -1,6 +1,10 @@
 import WHITE_LOGO from "../../Assets/Logo/WHITE_LOGO.png";
 
-const LoginForm = () => {
+interface LoginFormProps {
+  toggleForm: () => void;
+}
+
+const LoginForm = ({ toggleForm }: LoginFormProps) => {
   return (
     <>
       <div className="flex justify-center items-center h-screen">
@@ -42,8 +46,8 @@ const LoginForm = () => {
               Login
             </button>
           </div>
-          <div className="text-center mt-4">
-            <a className="px-4 py-1 text-lg text-blue-600">
+          <div className="text-center mt-4 cursor-pointer">
+            <a className="px-4 py-1 text-lg text-blue-600" onClick={toggleForm}>
               No account yet? Register here
             </a>
           </div>
