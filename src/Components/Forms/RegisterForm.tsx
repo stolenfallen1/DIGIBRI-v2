@@ -8,7 +8,7 @@ const RegisterForm = ({ toggleForm }: RegisterFormProps) => {
   return (
     <>
       <div className="flex justify-center items-center h-screen">
-        <form className="border-2 p-10 rounded">
+        <form className="border-2 border-black p-10 rounded">
           <div className="flex justify-center items-center">
             <img
               src={WHITE_LOGO}
@@ -19,10 +19,12 @@ const RegisterForm = ({ toggleForm }: RegisterFormProps) => {
           <h3 className="mb-8 text-center font-bold text-4xl tracking-tighter">
             SIGN UP
           </h3>
-          {/* School ID */}
+          {/* Librarian ID */}
           <div className="flex justify-center items-center mb-2">
             <div className="flex justify-center items-center">
-              <label className="text-xl pr-5 tracking-tight">School ID:</label>
+              <label className="text-xl pr-5 tracking-tight">
+                Librarian ID:
+              </label>
               <input
                 className="text-lg border-b-2"
                 type="text"

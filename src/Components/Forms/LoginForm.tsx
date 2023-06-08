@@ -8,7 +8,7 @@ const LoginForm = ({ toggleForm }: LoginFormProps) => {
   return (
     <>
       <div className="flex justify-center items-center h-screen">
-        <form className="border-2 p-10 rounded">
+        <form className="border-2 border-black p-10 rounded">
           <div className="flex justify-center items-center">
             <img
               src={WHITE_LOGO}
