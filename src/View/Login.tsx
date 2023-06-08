@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div>
       <LoginForm />
-      <RegisterForm />
+      {/* <RegisterForm /> */}
     </div>
   );
 };
