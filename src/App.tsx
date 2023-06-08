@@ -1,7 +1,16 @@
+import Login from "./View/Login";
+import Dashboard from "./View/Dashboard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="p-0 m-0 box-border">
-      <h1 className="font-bold text-2xl text-center">HELLO WORLD</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
