@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import WHITE_LOGO from "../../Assets/Logo/WHITE_LOGO.png";
 
 interface LoginFormProps {
@@ -42,9 +43,11 @@ const LoginForm = ({ toggleForm }: LoginFormProps) => {
             </div>
           </div>
           <div className="text-center">
-            <button className="px-4 py-1 mt-8 text-xl border-2 border-black rounded">
-              Login
-            </button>
+            <Link to="/Dashboard">
+              <button className="px-4 py-1 mt-8 text-xl border-2 border-black rounded">
+                Login
+              </button>
+            </Link>
           </div>
           <div className="text-center mt-4 cursor-pointer">
             <a className="px-4 py-1 text-lg text-blue-600" onClick={toggleForm}>
